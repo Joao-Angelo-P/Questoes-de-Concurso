@@ -1,0 +1,12 @@
+Primeiro caso: x([6000,5])
+
+Calculando (dv=100>>2), temos que tranformar 100 em binário. 100 base 2 é 1100100, e as duas últimas casas são suprimidas(00), gerando o binário 1101.
+1101 -> 2^4 + 2^3 + 2^0 -> 16 + 8 + 1 -> 25, Então dv=25.
+O primeiro caso(R1) cai na cláusula "match" sendo "case [a, du] if a<m", em que substituindo os valores gera "case [6_000, 5] if a<10_000"
+Então, a saída do return -> 6_000*10*5/25 -> 12_000
+Primeira saída -> R1 = 12_000
+
+O segundo caso(R2) cai na segunda cláusula sendo "case [15_000, 3] if 15>=10_000", então a saída do return -> 15_000*20*3/25 
+Segunda sáida -> R2 = 36_000
+
+Resposta D) R1 = 12000.0 e R2 = 36000.0
