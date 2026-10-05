@@ -1,0 +1,26 @@
+Aqui é uma função(myf) que retorna uma função anônima(lambda).
+O primeiro parenteses usado é como argumento da função e segunda vez usado é para a função anonima.
+
+myx = myf(2); n = 2
+myy = myy(-3); n = - 3.
+
+Aqui já da para eliminar umas alternativas, pois há sinal negativo.
+
+myx é resultado negativo e my é positivo
+Elimina A, D, E. 
+
+Faz primeiro caso, então 
+n=2 e a=11 -> 11*11/(-2) = -60.5
+
+Segundo caso, então
+n=-3 e a=12 -> 12*12/(-1)*(-3) = 48.0
+
+Gabarito: C
+
+def myf(n):
+  return lambda a : a * a / -n
+
+myx = myf(2)
+myy = myf(-3)
+
+print('A= ',myx(12-1), 'e B= ',myy(13-1))
